@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Telegram Join Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: linear-gradient(135deg, #4b6cb7, #182848);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+
+    .btn {
+        padding: 18px 40px;
+        font-size: 24px;
+        background: #0088cc;
+        border: none;
+        border-radius: 50px;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn:active::after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.4);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        border-radius: 50%;
+        animation: ripple 0.4s linear;
+    }
+
+    @keyframes ripple {
+        to {
+            transform: translate(-50%, -50%) scale(2);
+            opacity: 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+<button class="btn" onclick="join()">Join Telegram Channel</button>
+
+<script>
+function join() {
+    window.location.href = "https://t.me/itzprince1204";
+}
+</script>
+
+</body>
+</html>
