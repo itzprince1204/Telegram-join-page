@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join Telegram</title>
+
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+    /* Moving Gradient Background */
+    body {
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(-45deg, #001f3f, #003f7f, #0066cc, #0099ff);
+        background-size: 400% 400%;
+        animation: gradientMove 12s ease infinite;
+        position: relative;
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* Button */
+    .btn {
+        position: relative;
+        padding: 18px 34px;
+        background: #00aaff;
+        color: white;
+        font-size: 22px;
+        border-radius: 12px;
+        text-decoration: none;
+        display: inline-block;
+        overflow: hidden;
+        box-shadow: 0 0 20px #00aaff, 0 0 40px #00aaff;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        box-shadow: 0 0 25px #33bbff, 0 0 50px #33bbff;
+    }
+
+    /* Spark-Pop Effect */
+    .btn:active::after {
+        content: "";
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        background: rgba(255,255,255,0.5);
+        border-radius: 50%;
+        transform: scale(0);
+        animation: pop 0.4s linear;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @keyframes pop {
+        to { transform: scale(4); opacity: 0; }
+    }
+
+    h1 { color: white; font-size: 32px; text-shadow: 0 0 12px #00aaff; }
+
+</style>
+</head>
+<body>
+
+<div class="container" style="text-align:center;">
+    <h1>Join Our Telegram Channel</h1>
+    <a class="btn" href="https://t.me/MRMENIYASURESHOT" target="_blank">Join Now</a>
+</div>
+
+</body>
+</html>
